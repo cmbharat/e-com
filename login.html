@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        <h1>DigitalLync</h1>
+
+        <a href="login.html">Login</a>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="services.html">Services</a>
+
+       <center> <form>
+            Enter Username<input type="text" placeholder="username" id="username"> <br><br>
+            Enter Password<input type="password" placeholder="password" id="password">
+            <p id="message" style="color: red"></p>
+            <button onclick="login()">Login</button>
+        </form></center>
+        <script>
+        function login(){
+                      event.preventDefault();
+                      var username=document.getElementById('username').value;
+
+                      if(username=='')
+                      {
+                       document.getElementById('message').innerHTML='Username Cannot be empty';
+                      }
+
+        }
+        
+        </script>
+    </body>
+</html>

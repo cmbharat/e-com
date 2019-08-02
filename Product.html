@@ -1,0 +1,45 @@
+<html>
+
+<head>
+</head>
+
+<body>
+<center>
+    <form>
+        <input type="text" id="name" placeholder="Name"><br><br>
+        <input type="text" id="Age" placeholder="Age"><br><br>
+        <input type="text" id="Profession" placeholder="Prof"><br><br>
+        Male<input type="radio" name="gender" ><br><br>
+        Female<input type="radio" name="gender"><br><br>
+        <select id="city">
+            <option>Bangalore</option>
+            <option>Mangalore</option>
+            <option>Mysore</option>
+        </select><br><br>
+        T&C<input type="checkbox" id="Desc" ><br><br>
+        <textarea id="desc" placeholder="Description"></textarea>
+        
+        <button type="Submit" onclick="sub()">Submit</button>
+        <p id='name1'></p>
+    </form>
+</center>
+    <script>
+        function sub(){
+            event.preventDefault();
+            var name=document.getElementById('name').value;
+            var Age=document.getElementById('Age').value;
+            var Profession=document.getElementById('Profession').value;
+            var gender=document.getElementsByName('gender').value;
+            console.log(name);
+            console.log(Age);
+            console.log(Profession);
+            console.log(gender);
+            document.getElementById('name1').innerHTML=name;
+        }            
+       
+       </script>
+       
+
+
+</body>
+</html>
